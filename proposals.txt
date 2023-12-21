@@ -1,0 +1,102 @@
+
+NAME: Shape Escape
+
+PROJECT DESCRIPTION:
+
+My game will be inspired by the iconic mobile game Geometry Dash. 
+The user will be able to press keys on their respective keyboard (up) that 
+will correspond to the movement of the “block”. As the user successfully 
+progresses throughout the game, the level they are on will increase. 
+This corresponded to the speed of the game increasing. 
+The highest score of the user will be recorded as well as their current score. 
+This game will feature some of the unique features that the actual games has 
+such as teleportation or “rocket-ship mode”. However, the implementation of 
+those said features is still undecided.
+
+
+SIMILAR PROJECTS:
+Since my game is based off "Geometry Dash," it will have many of the 
+features that make "Geometry Dash" a hit! However, considering my project
+will done based off what I've learned from 112 and via cmu_graphics, 
+it won't have all of the features the original game has. But hopefull, it'll
+be just as fun. I plan to use some of the features that the original geometry 
+dash game offers such as teleportation and/or rocket-ship mode as a way to
+achieve my complexity point.
+
+STRUCTURAL PLAN:
+Since I'll have to record the positions of the 
+geometry block, I'll have record it's 4-corner coordinates. Additionally, I
+will have to record many coordinates in my game to account for collisions
+(hence when the user loses). Therefore, I plan to implement a point class to
+add clarity to my code (and help with debugging). Additionally, I plan to have
+a collision method which will be essentially a fancier version of the distance
+method where it'll check to see if the user's block collided with an obstacle.
+Since my project will be using animations, I'll also have a 
+onMousePress(app,mouseX,mouseY) function and much more.
+
+
+ALGORITHMIC PLAN:
+The trickest part of my project will be implementing the teleportation feature
+(that leads into rocket-ship mode) of geometry dash. I plan to have a discussion 
+with my TP mentor Sonya on how to approach this section of my project, however,
+I expect that I will check if the user accurately makes it through the
+teleportation portal. If so, then the background will change. Additionally, I
+will update the image of the block such that it becomes an image of the block
+on a rocket ship. Then this part of the game will resemble the beginning
+of my game except the user will have more controls. In rocket-ship mode, the
+user will be able to use the down and up arrow keys. In normal mode, the user
+can only use the up arrow key. 
+
+TIMELINE:
+NOV 27 (TP1):
+Begin coding the standard features (graphics) of my game
+    Point class
+    Geometry block figure
+    Beckground images (normal and in rocket-mode)
+    Block can function within normal mode
+    Create obstacles to avoid
+    Code accurately detects an obstacle and ends game 
+DEC 1 (TP2):
+Code integral parts of project:
+    Block icon is now on a mini rocket
+    User, if successful, should be able to return to normal mode
+    through a second teleport
+    Records high score of player
+    Records current score of player
+    Records levels 
+    User can choose the color of the block
+    Essential parts of my game function
+DEC 6 (TP3):
+    Smoother transitions between teleports
+    Polishing the parts of the project that need fixing
+    Increasing speed of block as user increses in levels
+
+VERSION CONTROL PLAN:
+I plan to code via VS Code and upload all updated versions of my code to my 
+TP-112 repository on gitHub:
+
+
+
+MODULE LIST:
+I won't be using an modules outside cmu_cpcs for now.
+
+
+TP1 UPDATE:
+No changes currently being made to design proposal. However, I have decided
+to give myself more time to code collisions.
+
+TP2 UPDATE:
+No changes currently being made to design proposal.
+
+TP3 UPDATE:
+The following features were added to my design proposal:
+-Lives where the player gets 3 lives in the game (represented by 3 hearts in
+the top right corner of the screen)
+-Player's name is displayed in top right corner of screen
+-The user, when down to 1 life, has a chance to redeem 1 life back by capturing
+a star that is displayed on the screen. Most notably, this star will only appear
+once in a game
+-The user, when down to 1 life, can also claim the "ghost" which essentially
+gives them the ability to glide through 3 obstacles without having to jump. The
+icon the player is using will have an outline of yellow indicating that they have
+captured the ghost.

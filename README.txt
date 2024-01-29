@@ -27,3 +27,5 @@ player invinsibility for exactly 3 obstacles)
 Shortcut Commands:
 To check to see how the star and ghost abilities work, press the "t" key to
 jump to level 2.
+
+NOTE: YOU MUST HAVE CMU_GRAPHICS INSTALLED TO SUCESSFULLY RUN THIS CODE.
